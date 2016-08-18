@@ -1,7 +1,9 @@
 'use strict';
 const fetch = require('isomorphic-fetch');
-const nightlyURL = (process.env.NODEJS_ORG_NIGHTLY_MIRROR || 
-                   'https://nodejs.org/download/nightly') + '/index.json';
+const downloadStr = '/download/nightly/index.json'
+const nodeURL = (process.env.NODEJS_ORG_NIGHTLY_MIRROR ||
+                   'https://nodejs.org')
+const nightlyURL = `${nodeURL}${downloadStr}`;
 
 const files = [
   "headers",
