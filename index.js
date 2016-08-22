@@ -6,18 +6,17 @@ const nodeURL = (process.env.NODEJS_ORG_NIGHTLY_MIRROR ||
 const nightlyURL = `${nodeURL}${downloadStr}`;
 
 const files = [
-  "headers",
-  "linux-x64",
-  "linux-x86",
-  "osx-x64-pkg",
-  "osx-x64-tar",
-  "osx-x86-tar",
-  "src",
-  "sunos-x64",
-  "sunos-x86",
-  "win-x64-exe",
-  "win-x86-exe",
-  "win-x86-msi"
+	"headers",
+	"linux-x64",
+	"linux-x86",
+	"osx-x64-pkg",
+	"osx-x64-tar",
+	"osx-x86-tar",
+	"src",
+	"sunos-x64",
+	"sunos-x86",
+	"win-x64-msi",
+	"win-x86-msi",
 ];
 
 module.exports = function () {
